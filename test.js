@@ -32,8 +32,22 @@ function scoreTest() {
 
 // Score an individual radio element
 function scoreRadio(el) {
-    scoreMap[el.name] = el.value
-    document.getElementById(el.name).innerText = el.value
+    scoreMap[el.name] = el.value;
+    var x = document.getElementById(el.name);
+    var a = el.value;
+    
+  x.innerHTML= `  <div id='eng-ability' class="card visible" style="width: 10rem;">
+  <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+      alt="Card image cap">
+  
+  <div class="card-body px-2 py-4 text-center">
+      <h6 class="card-title">Residential Status</h6>
+
+      <span id='eng-ability'>`+a+`</span>
+  </div>
+  
+</div>`
+
     scoreTest()
 }
 
