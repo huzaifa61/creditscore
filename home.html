@@ -20,12 +20,9 @@
 
     <style>
         .home {
-            background: #cc2b5e;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #753a88, #cc2b5e);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f12711, #f5af19); 
         }
 
         .btn {
@@ -210,14 +207,14 @@
                     <div class="form-check-inline">Other Credit Card
 
                         <label class="form-check-label ml-5">
-                            <input type="radio" onclick='scoreRadio(this)' name="has-partner" value='76' class="form-check-input">Yes
+                            <input type="radio" onclick='scoreRadio(this)' name="Other Credit Card" value='76' class="form-check-input">Yes
 
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="radio"
-                                onclick='scoreRadio(this)' value='50' class="form-check-input" name="has-partner">No
+                                onclick='scoreRadio(this)' value='50' class="form-check-input" name="Other Credit Card">No
                         </label>
                     </div>
 
@@ -231,14 +228,14 @@
 
                             <label class="form-check-label ml-5">
                                 <input type="radio" value='87' onclick='scoreRadio(this);showEducationQuestions(true);'
-                                    name='aus-education'>Employed
+                                    name='Employee Status'>Employed
 
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
                                 <input type="radio" onclick='scoreRadio(this);showEducationQuestions(false);'
-                                    name='aus-education' value='59'>Unknown
+                                    name='Employee Status' value='59'>Unknown
                             </label>
                         </div>
 
@@ -247,7 +244,7 @@
 
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Income</label>
                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
-                        onchange='scoreRadio(this)' name='qualification'>
+                        onchange='scoreRadio(this)' name='Income'>
                         <option value='0'>Choose...</option>
                         <option value='31'>Up to 28999</option>
                         <option value='57'>29000 to 32999</option>
@@ -257,7 +254,7 @@
                     </select>
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Age</label>
                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
-                        onchange='scoreRadio(this)' name='age-select'>
+                        onchange='scoreRadio(this)' name='Age'>
                         <option value='0'>Choose...</option>
                         <option value='53'>Upto 36</option>
                         <option value='59'>37 to 39</option>
@@ -267,7 +264,7 @@
                     </select>
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Time With Bank</label>
                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
-                        onchange='scoreRadio(this)' name='tmwb'>
+                        onchange='scoreRadio(this)' name='Time With Bank'>
                         <option value='0'>Choose...</option>
                         <option value='51'>Up to 11 </option>
                         <option value='61'>12 to 44</option>
@@ -277,7 +274,7 @@
 
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Average Montly Balance</label>
                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
-                        onchange='scoreRadio(this)' name='os-experience'>
+                        onchange='scoreRadio(this)' name='Average Monthly Balance'>
                         <option value='0'>Choose...</option>
                         <option value='90'>Up to 558.87 </option>
                         <option value='62'>558.88 to 1597.43</option>
@@ -289,7 +286,7 @@
                 <div class="col-6">
                     <div class="d-flex flex-row">
                         <div id='Residential Status' class="card invisible ml-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+                            <img class="card-img-top" src="https://i.ibb.co/M9KnBf2/4.png"
                                 alt="Card image cap">
                             
                             <div class="card-body px-2 py-4 text-center">
@@ -299,59 +296,59 @@
                             </div>
                             
                         </div>
-                        <div id='has-partner' class="card invisible ml-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+                        <div id='Other Credit Card' class="card invisible ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://i.ibb.co/7YGDjb6/6.png"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title"> Other Credit Card</h6>
-                                <span id='has-partner'></span>
+                                <span id='Other Credit Card'></span>
                             </div>
                         </div>
-                        <div id='aus-education' class="card invisible ml-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/android.svg"
+                        <div id='Employee Status' class="card invisible ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://i.ibb.co/yVvJ0yP/5.png"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title">Employee Status</h6>
-                                <span id='aus-education'></span>
+                                <span id='Employee Status'></span>
                             </div>
                         </div>
                     </div>
                     <div class="d-flex flex-row mt-3">
 
-                        <div id='qualification' class="card ml-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+                        <div id='Income' class="card invisible ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://i.ibb.co/BfdtbNH/7.png"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title">Income</h6>
-                                <span id='qualification'></span>
+                                <span id='Income'></span>
                             </div>
                         </div>
-                        <div id='age-select' class="card ml-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+                        <div id='Age' class="card invisible ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://i.ibb.co/346qd8G/1.png"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title">Age</h6>
-                                <span id='age-select'></span>
+                                <span id='Age'></span>
                             </div>
                         </div>
-                        <div id='tmwb' class="card ml-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+                        <div id='Time With Bank' class="card invisible ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://i.ibb.co/SJnHkJ6/2.png"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title">Time With Bank</h6>
-                                <span id='tmwb'></span>
+                                <span id='Time With Bank'></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="d-flex flex-row justify-content-center mt-3">
 
-                        <div id='os-experience' class="card ml-3" style="width: 10rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+                        <div id='Average Monthly Balance' class="card invisible ml-3" style="width: 10rem;">
+                            <img class="card-img-top" src="https://i.ibb.co/C1nJQmW/3.png"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title">Average Monthly Balance</h6>
-                                <span id='os-experience'></span>
+                                <span id='Average Monthly Balance'></span>
                             </div>
                         </div>
 
@@ -368,102 +365,96 @@
 
 
     </div>
-    <div style="width: 100%; text-align: center;">
-        <span id='final-score'></span>
-
-    </div>
-
+ 
     <div class="d-flex justify-content-center">
         <canvas id="foo"></canvas>
     </div>
 
-    <div id="preview-textfield"></div>
+ 
+
+    <div style="width: 100%; text-align: center;">
+        <span id='final-score'></span>
+
     </div>
+    <div class="mt-4" style="width: 100%; text-align: center;">
+    <div id="preview-textfield"></div>
+</div>
+</div>
 
 
+ 
+
+    <div class="jumbotron jumbotron-fluid mt-5 py-5 mb-0" style="background-color:#242424">
+            <div class="footer-copyright text-center text-white py-3">© 2021 Copyright :
+        <a href="#"> CreditRiskScoreCard </a>
+    </div>
+   </div>
     <!-- Footer -->
-    <footer class="page-footer font-small teal pt-4">
-
-        <!-- Footer Text -->
-        <div class="container-fluid text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-                        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam
-                        recusandae
-                        harum esse fugiat. Itaque, culpa?</p>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mb-md-0 mb-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi
-                        earum
-                        commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam,
-                        aspernatur id
-                        excepturi hic.</p>
-
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Text -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2021 Copyright:
-            <a href="#"> CreditRiskScoreCard </a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
-    <div class="p5 m-5"></div>
 
     <!-- fontawesome -->
-    <script src="test.js"></script>
 
     <script src="gauge.js-gh-pages/gauge.js-gh-pages/dist/gauge.min.js"></script>
-    <script>
-        var opts = {
-            angle: -0.2, // The span of the gauge arc
-            lineWidth: 0.2, // The line thickness
-            radiusScale: 1, // Relative radius
-            pointer: {
-                length: 0.6, // // Relative to gauge radius
-                strokeWidth: 0.086, // The thickness
-                color: '#120F26' // Fill color
-            },
-            limitMax: false,     // If false, max value increases automatically if value > maxValue
-            limitMin: false,     // If true, the min value of the gauge will be fixed
-            colorStart: '#6FADCF',   // Colors
-            colorStop: '#8FC0DA',    // just experiment with them
-            strokeColor: '#E0E0E0',  // to see which ones work best for you
-            generateGradient: true,
-            highDpiSupport: true,     // High resolution support
+    <script src="test.js">
 
-        };
-        var target = document.getElementById('foo'); // your canvas element
-        var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-        gauge.maxValue = 3000; // set max gauge value
-        gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-        gauge.animationSpeed = 61; // set animation speed (32 is default value)
-        gauge.set(2200); // set actual value
+    </script>
+
+    <script>
+      
+        
+      var opts = {
+        angle: -0.03, // The span of the gauge arc
+  lineWidth: 0.3, // The line thickness
+  radiusScale: 0.88, // Relative radius
+  pointer: {
+    length: 0.67, // // Relative to gauge radius
+    strokeWidth: 0.082, // The thickness
+    color: '#000000' // Fill color
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6F6EA0',   // Colors
+  colorStop: '#C0C0DB',    // just experiment with them
+  strokeColor: '#EEEEEE',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+  staticZones: [
+   {strokeStyle: "#F03E3E", min: 0, max: 410}, // Red from 100 to 130
+   {strokeStyle: "#FFDD00", min: 410, max: 499}, // Yellow light red
+   {strokeStyle: "#30B32D", min: 499, max: 650}, // Green
+]
+  
+};
+var target = document.getElementById('foo'); // your canvas element
+var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+gauge.maxValue = 650; // set max gauge value
+gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+gauge.animationSpeed = 93; // set animation speed (32 is default value)
+gauge.set(0); // set actual value
+
+        function ff(){
+            var gs = document.getElementById('final-score').innerText;
+              console.log(gs);
+              gauge.set(finalScore);
+              if(finalScore<=410){
+                document.getElementById('preview-textfield').innerHTML = '<h3 class="pp"> You Default rate is too High, please kindly consult with your bank </h3>';
+
+              }
+              else if(finalScore>410 && finalScore<=499)
+              {
+                document.getElementById('preview-textfield').innerHTML = '<h3 class="pp"> You Default rate is High, Try to maintain your score </h3>';
+
+              }
+              else if(finalScore>499 && finalScore<=519)
+              {
+                document.getElementById('preview-textfield').innerHTML = '<h3 class="pp"> You Default rate is Moderate, But still  maintain your score to get better</h3>';
+
+              }
+              else{
+                document.getElementById('preview-textfield').innerHTML = '<h3 class="pp"> You are a good person you are not defaulting. Keep it up</h3>';
+
+              }
+        }
+
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">

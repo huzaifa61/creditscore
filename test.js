@@ -4,6 +4,8 @@ var workMap = {}
 var finalScore = 0
 var visa = ''
 var threshold = ''
+
+
   
 console.log("ppppppppppp")
 // Score the test and render output to DOM
@@ -19,8 +21,8 @@ function scoreTest() {
             finalScore += parseInt(scoreArr[i])
         }
     }
-    document.getElementById('final-score').innerHTML = 'Your score is: ' + '<b>' + finalScore + '</b>';
-
+    document.getElementById('final-score').innerHTML = '<h1 class="pp"> Your Score : ' + finalScore + '</h1>';
+    ff(); 
     var passMsg = 'As the pass mark for the ' + visa + ' is ' + threshold + ', '
     if (finalScore >= threshold) {
         passMsg += ' you would appear to meet the criteria for this type of visa.'
