@@ -188,20 +188,20 @@
                     <div class="form-check-inline">Residential Status
 
                         <label class="form-check-label ml-5">
-                            <input type="radio" onclick='scoreRadio(this)' name='eng-ability' value='73'
+                            <input type="radio" onclick='scoreRadio(this)' name='Residential Status' value='73'
                                 class="form-check-input" name="optradio">Home Owner
 
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="radio" onclick='scoreRadio(this)' name='eng-ability' value='62'
+                            <input type="radio" onclick='scoreRadio(this)' name='Residential Status' value='62'
                                 class="form-check-input" name="optradio">Tenant
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="radio" onclick='scoreRadio(this)' name='eng-ability' value='91'
+                            <input type="radio" onclick='scoreRadio(this)' name='Residential Status' value='91'
                                 class="form-check-input" name="optradio">Other
                         </label>
                     </div>
@@ -210,16 +210,14 @@
                     <div class="form-check-inline">Other Credit Card
 
                         <label class="form-check-label ml-5">
-                            <input type="radio" onclick='setPartnerScore(this.value); showResidentQuestion(false);'
-                                value='76' class="form-check-input" name="has-partner">Yes
+                            <input type="radio" onclick='scoreRadio(this)' name="has-partner" value='76' class="form-check-input">Yes
 
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="radio"
-                                onclick='setPartnerScore(this.value); showResidentQuestion(false);showQualityQuestions(false)'
-                                ; value='50' class="form-check-input" name="has-partner">No
+                                onclick='scoreRadio(this)' value='50' class="form-check-input" name="has-partner">No
                         </label>
                     </div>
 
@@ -290,27 +288,27 @@
 
                 <div class="col-6">
                     <div class="d-flex flex-row">
-                        <div id='eng-ability' class="card invisible ml-3" style="width: 18rem;">
+                        <div id='Residential Status' class="card invisible ml-3" style="width: 18rem;">
                             <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
                                 alt="Card image cap">
                             
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title">Residential Status</h6>
 
-                                <span id='eng-ability'></span>
+                                <span id='Residential Status'></span>
                             </div>
                             
                         </div>
-                        <div class="card ml-3" style="width: 18rem;">
+                        <div id='has-partner' class="card invisible ml-3" style="width: 18rem;">
                             <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title"> Other Credit Card</h6>
-                                <span id='partner'></span>
+                                <span id='has-partner'></span>
                             </div>
                         </div>
-                        <div class="card ml-3" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+                        <div id='aus-education' class="card invisible ml-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://placementrush.com/assets/course_icons/android.svg"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
                                 <h6 class="card-title">Employee Status</h6>
@@ -320,7 +318,7 @@
                     </div>
                     <div class="d-flex flex-row mt-3">
 
-                        <div class="card ml-3" style="width: 18rem;">
+                        <div id='qualification' class="card ml-3" style="width: 18rem;">
                             <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
@@ -328,7 +326,7 @@
                                 <span id='qualification'></span>
                             </div>
                         </div>
-                        <div class="card ml-3" style="width: 18rem;">
+                        <div id='age-select' class="card ml-3" style="width: 18rem;">
                             <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
@@ -336,7 +334,7 @@
                                 <span id='age-select'></span>
                             </div>
                         </div>
-                        <div class="card ml-3" style="width: 18rem;">
+                        <div id='tmwb' class="card ml-3" style="width: 18rem;">
                             <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">
@@ -348,7 +346,7 @@
 
                     <div class="d-flex flex-row justify-content-center mt-3">
 
-                        <div class="card ml-3" style="width: 10rem;">
+                        <div id='os-experience' class="card ml-3" style="width: 10rem;">
                             <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
                                 alt="Card image cap">
                             <div class="card-body px-2 py-4 text-center">

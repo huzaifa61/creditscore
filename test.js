@@ -35,15 +35,17 @@ function scoreRadio(el) {
     scoreMap[el.name] = el.value;
     var x = document.getElementById(el.name);
     var a = el.value;
-    
-  x.innerHTML= `  <div id='eng-ability' class="card visible" style="width: 10rem;">
-  <img class="card-img-top" src="https://placementrush.com/assets/course_icons/dsa.svg"
+    var p = el.name;
+    var myimg = x.getElementsByTagName('img')[0];
+    var mysrc = myimg.src;
+  x.innerHTML= `  <div class="card visible" style="width: 10rem;">
+  <img class="card-img-top" src="`+mysrc+`"
       alt="Card image cap">
   
   <div class="card-body px-2 py-4 text-center">
-      <h6 class="card-title">Residential Status</h6>
+      <h6 class="card-title">`+p+`</h6>
 
-      <span id='eng-ability'>`+a+`</span>
+      <span id='`+p+`'>`+a+`</span>
   </div>
   
 </div>`
@@ -100,8 +102,24 @@ function showQualityQuestions(bool) {
 }
 
 function setPartnerScore(value) {
-    scoreMap['partner'] = value
-    document.getElementById('partner').innerText = value
+    scoreMap[el.name] = el.value;
+    var x = document.getElementById(el.name);
+    var a = el.value;
+    var p = el.name;
+    var myimg = x.getElementsByTagName('img')[0];
+    var mysrc = myimg.src;
+  x.innerHTML= `  <div class="card visible" style="width: 10rem;">
+  <img class="card-img-top" src="`+mysrc+`"
+      alt="Card image cap">
+  
+  <div class="card-body px-2 py-4 text-center">
+      <h6 class="card-title">`+p+`</h6>
+
+      <span id='`+p+`'>`+a+`</span>
+  </div>
+  
+</div>`
+
     scoreTest()
 }
 
